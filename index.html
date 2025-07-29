@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CI/CD Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .btn {
+      padding: 0.5rem 1rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CI/CD Pipeline Dashboard</h1>
+    <p>Continuous Integration & Deployment Status</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Latest Build</h2>
+      <p>Status: ✅ Success</p>
+      <p>Commit: <code>abc123def</code></p>
+      <p>Branch: <strong>main</strong></p>
+      <p>Deployed at: <time>2025-07-25 14:00</time></p>
+      <button class="btn">Trigger New Build</button>
+    </div>
+
+    <div class="card">
+      <h2>Environment</h2>
+      <ul>
+        <li>Production: ✅ Up</li>
+        <li>Staging: ✅ Up</li>
+        <li>Test: ✅ Up</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Pipeline Stages</h2>
+      <ol>
+        <li>🔧 Code Checkout</li>
+        <li>🔍 Unit Tests</li>
+        <li>🧪 Integration Tests</li>
+        <li>🚀 Deployment</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 CI/CD System | Managed by DevOps Team
+  </footer>
+
+</body>
+</html>
